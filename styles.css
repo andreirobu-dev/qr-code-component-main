@@ -28,7 +28,7 @@ body {
 
 img {
     border-radius: 20px;
-    flex: initial;
+    flex: auto;
 }
 
 h1 {
@@ -36,6 +36,7 @@ h1 {
     font-weight: 700;
     text-align: center;
     margin: 0;
+    flex: auto;
 }
 
 sub {
@@ -43,4 +44,14 @@ sub {
     font-weight: 400;
     color: grey;
     text-align: center;
+    flex: auto;
+}
+
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+    #card {
+        width: 80vw;
+        height: 140vw;
+        min-width: 256px;
+        min-height: 550px;
+    }
 }
